@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>Document</title>
+  </head>
+  <style>
+    table {
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    td,
+    th {
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding: 8px;
+    }
+
+    tr:nth-child(even) {
+      background-color: #dddddd;
+    }
+  </style>
+  <body>
+    <h1>Customer Transactions</h1>
+
+    <div id="namePerson"></div>
+    <br />
+    <select id="myDate">
+      <option value="Amount" disabled>Amount</option>
+      <option value="0 - 1000">0 - 1000</option>
+      <option value="1000 - 2000">1000 - 2000</option>
+      <option value="Above 2000">Above 2000</option>
+    </select>
+    <br /><br />
+    <div id="tableTransaction"></div>
+
+    <br /><br />
+    <label for="dateRange">Select Date Range:</label>
+    <select id="dateRange">
+      <option value="" disabled>Select Date</option>
+      <option value="2022-01-01">2022-01-01</option>
+      <option value="2022-01-02">2022-01-02</option>
+    </select>
+    <br /><br />
+    <canvas id="myChart"></canvas>
+
+    <script src="index.js"></script>
+  </body>
+</html>
